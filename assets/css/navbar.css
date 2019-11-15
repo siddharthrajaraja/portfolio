@@ -1,0 +1,8 @@
+img#pic:hover{ 
+    transform: scale(0.9);
+  }
+  li:hover{
+    background-color: red;
+    transform: scale(1.2);
+  }
+  

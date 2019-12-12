@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body >
+  
+    <canvas class="background"></canvas>
+    <script src="/assets/js/particles.min.js"></script>
+  
+</body>
+<script>
+    window.onload= ()=> {
+            Particles.init({
+                selector: '.background',
+                connectParticles:true,
+                maxParticles:150,
+                minDistance:180,
+                sizeVariations:15
+                        });
+            };
+</script>
+<style>
+        html, body {
+                margin: 0;
+                padding: 0;
+                }
+            .background {
+                position:relative;
+                display:block;
+                top: 800;
+                left: 0;
+                z-index: 0;
+            }
+            
+</style>
+</html>

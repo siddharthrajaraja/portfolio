@@ -1,20 +1,28 @@
 <div class="parallax-container">
     <div class="parallax"> <img src="/assets/images/back.jpg" alt="" class="responsive-img" > </div>
   </div>
-  <div class="section white">
-    <div class="row container">
+  <!--This is About me Section-->
+  <div class="section white"  id="About me">
+    <div class="row container"  >
            <b> <h4 class="black-text center-align"><%=description['About me']['name']%></h4> </b>
            
-           <div id="describe" class="container truncate  black-text">
+           <div id="describe" class="container truncate  black-text scrollspy">
                 <%=description['About me']['describe']%>
               </div>
+             
           <center>  <button class="btn-floating material-icons red circle waves-effect center-align tooltipped" id="enlarge" data-position="right" data-tooltip="Click to view full description"  onclick="document.getElementById('describe').classList.remove('truncate'); document.getElementById('enlarge').style.display='none'; " >arrow_drop_down</button>  </center>
              
     </div>
   </div>
-  <div class="parallax-container">
+<div class="parallax-container">
     <div class="parallax"><img src="/assets/images/be72ff0c-8e57-4219-a47c-3c19b0f86f72.png" class="responsive-img"></div>
-  </div>
+</div>
+
+  <!--This is Academics-->
+<div class="section white black-text" id="Academics">
+  ok
+</div>  
+
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -25,5 +33,9 @@
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.tooltipped');
         var instances = M.Tooltip.init(elems, {});
+      });
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems, {});
       });
   </script>

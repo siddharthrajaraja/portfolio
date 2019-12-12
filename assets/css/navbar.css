@@ -1,8 +1,13 @@
 img#pic:hover{ 
     transform: scale(0.9);
   }
-  li:hover{
+  li.contents:hover{
     background-color: red;
     transform: scale(1.2);
+    transition-duration: 0.85s;;
+
   }
-  
+html,img{
+  scroll-behavior: smooth;
+  transition-duration: 1s;;
+}

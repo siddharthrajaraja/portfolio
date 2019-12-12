@@ -6,8 +6,9 @@ const path=require('path');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-var {home}=require('./getroutes.js')
+var {home,particles}=require('./getroutes.js')
 
 app.get('/',home);
+app.get('/particles',particles);
 
 app.listen(process.env.PORT || 1610)

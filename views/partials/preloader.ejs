@@ -26,18 +26,17 @@
       100% {
         opacity:0;
         visibility: hidden;
-        
       } 
     }
 
 </style>
 
-<div class="loader hidden" id="Loader">
-        <img src="/assets/images/Infinity-1s-200px.gif" alt="">
+<div class="loader hidden black" id="Loader">
+        <img src="/assets/images/Infinity-1s-200px.gif" class="circle animated infinite flash heartbeat" alt="">
         <br>
-        <h2 class="hide-on-small-only">Personalizing your experience</h2>
+        <h2 class="hide-on-small-only white-text animated infinite bounce">&nbsp; &nbsp;Personalizing your experience.....</h2>
         <div class="hide-on-med-and-up">
-            <h5>Personalizing your experience</h5>
+           <h6 class="white-text animated infinite bounce"> <strong> &nbsp; &nbsp;Personalizing your experience.....</strong> </h6>
         </div>
 </div>
 
@@ -48,7 +47,6 @@
         setTimeout(()=>{
                 document.getElementById("Loader").style.zIndex="0";
                 document.getElementById("Loader").style.display="none";
-                
         },5000)
     })
 </script>

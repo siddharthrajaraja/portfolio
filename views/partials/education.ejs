@@ -1,0 +1,57 @@
+<%var education=[
+        {
+            "name" : "Ramrao Adik Institute of Technology , Navi Mumbai",
+            "image" : "/assets/images/rait1.png",
+            "course" : "Bachelor's of Engineering - BE Computer Engineering",
+            "performance" : ["9.70","10.00","9.70","9.56"]
+        },
+        {
+            "name": "Delhi Public School , Moradabad",
+            "image":"/assets/images/dps.png",
+            "course" : "SSC, Science",
+            "performance" : ["95.2%"]
+        },
+        {
+            "name": "Delhi Public School , Moradabad",
+            "image":"/assets/images/dps.png",
+            "course" : "HSC, Science",
+            "performance" : ["CGPA : 10"]
+        }
+
+]%>
+
+<div class="row container" >
+<%for(var i=0;i<education.length;i++){%>
+    <div class="row">
+    <%if(i%2==0){%>
+                <div class="card valign-wrapper" class="black">
+                    
+                    <div class="card-image">
+                        <img src="<%=education[i]['image']%>" class="circle black" alt="ok">
+                    </div>
+                    <div class="card-content">
+                        <%=education[i]['name']%>
+                    </div>
+
+                </div>
+
+    <%}else{%>
+
+        <div class="card col s12 valign-wrapper" >
+            <div class="card-content">
+                <%=education[i]['name']%>
+               
+            </div>
+            <div class="card-image" style="float: right;">
+                <img class="circle black" src="<%=education[i]['image']%>" alt="ok">
+            </div>
+
+        </div>
+
+
+        <%}%>
+
+</div>
+
+<%}%>
+</div>

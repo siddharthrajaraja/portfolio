@@ -1,0 +1,185 @@
+    <div class="container">
+      <div class="timeline">
+        
+              <div class="timeline-event">
+          <div class="card timeline-content hoverable" style="border:solid black;" >
+            <div class="card-image waves-effect waves-block waves-light" style="border-bottom:solid black;" >
+              <img class="activator responsive-img" src="/assets/images/raitNavi.jpg" width="200px" height="200px" >
+              
+            </div>
+            <div class="card-content blue-grey lighten-3 black-text">
+              <strong> Mumbai University <br>  Bachelor of Engineering <br> (Computer Engineering) </strong>
+              <br> <strong> Semester 8 </strong>: Yet to appear 
+              <br> <strong> Semester 7 </strong>: Yet to appear 
+              <br> <strong> Semester 6 </strong>: Yet to appear 
+              <br> <strong> Semester 5 </strong>: Yet to appear 
+              <br> <strong> Semester 4 </strong>: 9.70 / 10.00 
+              <br> <strong> Semester 3 </strong>: 10.00 / 10.00 
+              <br> <strong> Semester 2 </strong>: 9.70 / 10.00 
+              <br> <strong> Semester 1 </strong>: 9.56 / 10.00 
+              <br> <br> <div class="right">Duration: 2017-Present </div>
+
+            </div>
+          </div>
+          <div class="timeline-badge black lighten-3 white-text">1</div>
+        </div>
+              
+              
+              <div class="timeline-event">
+          <div class="card timeline-content hoverable" style="border:solid black;">
+            <div class="card-image waves-effect waves-block waves-light" style="border-bottom:solid black;" >
+              <img class="activator responsive-img" src="/assets/images/dpsMbd.jpg" width="200px" height="200px">
+            
+            </div>
+            <div class="card-content blue-grey lighten-3 black-text">
+                <strong>  Central Board of Secondary Education <br>  Higher Secondary School Certificate <br> (PCM+IP) </strong>
+                <br> <strong> Result </strong>: 95.2% 
+                <br> <br> <div class="right">Duration: 2016-2017 </div>
+
+                
+            </div>
+          </div>
+          <div class="timeline-badge black lighten-3 white-text">2</div>
+        </div>
+              
+              
+              <div class="timeline-event">
+          <div class="card timeline-content hoverable" style="border:solid black;">
+            <div class="card-image waves-effect waves-block waves-light" style="border-bottom:solid black;" >
+              <img class="activator responsive-img" src="/assets/images/dpsMbd.jpg" width="200px" height="200px">
+            
+            </div>
+            <div class="card-content blue-grey lighten-3 black-text">
+                <strong>  Central Board of Secondary Education <br>  Secondary School Certificate <br></strong>
+                <br> <strong> Result </strong>: CGPA 10 
+                <br> <br> <div class="right">Duration: 2015-2016 </div>
+             </div>
+          </div>
+          <div class="timeline-badge black lighten-3 white-text">3</div>
+        </div>
+      </div>
+    </div>
+
+  <style>
+    .timeline{
+        position:relative;
+    }
+    
+    .timeline > .timeline-event{
+        position:relative;
+        padding-top:15px;
+        padding-bottom:5px;
+        
+    }
+    
+    .timeline > .timeline-event > .timeline-content{
+        position:relative;
+        width:calc(50%);
+    }
+    
+    .timeline-event::before {
+        display:block;
+        content:  "";
+        width:5px;
+        height:calc(50%);
+        position:absolute;
+        background:black;
+        left:calc(50%);
+        top:0;
+    }
+    
+    .timeline-event::before {
+        display:block;
+        content:  "";
+        width:5px;
+        height:calc(50%);
+        position:absolute;
+        background:black;
+        left:calc(50% + 10px);
+        top:0;
+    }
+    
+    
+    .timeline-event::after {
+        display:block;
+        content:  "";
+        width:5px;
+        height:calc(50%);
+        position:absolute;
+        background:black;
+        left:calc(50% + 10px);
+        top:calc(50%);
+    }
+    
+    .timeline-event:first-child::before,.timeline-event:last-child::after{
+        display:none;
+    }
+    
+    .timeline-event:nth-child(even) > .timeline-content{
+            margin-left:calc(58%);	
+    }
+    
+    .timeline-event:nth-child(odd) > .timeline-content{
+            margin-left:-3%;	
+    }
+    
+    .timeline-badge{
+        display:block;
+        position:absolute;
+        width:20px;
+        height:20px;
+        background:black;
+        top:calc(50%);
+        right:calc(46.5%);
+        border-radius:100%;
+        text-align:center;
+        cursor:pointer;
+        z-index:5;
+    }
+    
+    .timeline-badge > i{
+        font-size:10px;
+        line-height:20px;
+    }
+
+
+    @media (max-width: 600px){
+	
+        .timeline > .timeline-event > .timeline-content{
+            width:calc(100% - 70px);
+        }
+        
+        .timeline > .timeline-event::before , .timeline > .timeline-event::after{
+            left: 19px;
+        
+        }
+        
+        .timeline-event:nth-child(even) > .timeline-content , .timeline-event:nth-child(odd) > .timeline-content{
+            margin-left: 70px;
+        }
+        
+        .timeline > .timeline-event > .timeline-badge{
+            left:12px;
+        }
+    }
+    
+    .card-title {
+        
+        line-height: 1em;
+    }
+
+    .card-title.gradient {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            padding-bottom: 64px;
+            display: block;
+            width: 100%;
+            background-color: rgba(0,0,0,0);
+            background: linear-gradient(to bottom, rgba(125,185,232,0) 100%,rgba(0,0,0,0.4) 100%,rgba(0,0,0,0.8) 100%);
+        }
+    
+    
+    
+    
+  </style>

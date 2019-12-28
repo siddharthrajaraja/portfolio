@@ -1,5 +1,11 @@
 
 <style>
+    #Loader{
+        background: url('/assets/images/be happy.jpg');
+        background-size:cover;
+        background-repeat: repeat-x;
+    }
+
     .loader{
         top:0;
         left:0;
@@ -11,6 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     .loader > img{
@@ -34,9 +41,9 @@
 <div class="loader hidden black" id="Loader">
         <img src="/assets/images/Infinity-1s-200px.gif" class="circle animated infinite flash heartbeat" alt="">
         <br>
-        <h2 class="hide-on-small-only white-text animated infinite bounce">&nbsp;Personalizing your experience.....</h2>
+        <h2 class="hide-on-small-only black-text animated infinite bounce">&nbsp;Personalizing your experience.....</h2>
         <div class="hide-on-med-and-up">
-           <h6 class="white-text animated infinite bounce"> <strong> &nbsp;Personalizing your experience.....</strong> </h6>
+           <h6 class="white-text animated infinite bounce"> <strong class="black-text"> &nbsp;Personalizing your experience.....</strong> </h6>
         </div>
 </div>
 
@@ -49,4 +56,10 @@
                 document.getElementById("Loader").style.display="none";
         },5000)
     })
+
+    if(screen.width<600){
+        console.log(screen.width)
+        document.getElementById('Loader').style.backgroundSize="inherit";
+    }
+
 </script>

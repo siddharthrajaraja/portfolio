@@ -1,65 +1,18 @@
-<style>
-   
-    .text-block {
-        position: absolute;
-        top: 30%;
-        opacity: 0.8;
-        width: 100%;
-        line-break: normal;
+<script src="/assets/js/materialize.min.js"></script>
 
-    }
-</style>
-
-<%include%>
-
-<div class="carousel carousel-slider center fill" style="z-index:-1;position:relative;" >
-        <div  class="carousel-item">
-            <img id="lappy"  src="/assets/images/be72ff0c-8e57-4219-a47c-3c19b0f86f72.png" class="reponsive-img" alt="" srcset="" >
-            
-        </div> 
-        <div  class="carousel-item">
-                <img id="lappy"  src="/assets/images/back.jpg" class="reponsive-img" alt="" srcset="" >
-                
-            </div> 
-             
-        <div class="text-block hide-on-med-and-up" style="top: 0%;"  >
-            
-          <center>  <h5 class="center-align" style="background: black; width:fit-content;"><%=description['About me']['name']%></h5>
-                    <br>
-                    <div class=" container truncate flow-text" id="describe" style="background: black; margin-top:-10%" >
-                            <%=description['About me']['describe']%> 
-                    </div>
-                         <button onclick="document.getElementById('describe').classList.remove('truncate'); document.getElementById('plus').style.display='none';" class="btn-floating red circle material-icons waves-effect tooltipped" data-position="right" data-tooltip="Click to view full description">add </button>
-                    
-                   
-        </center>
-
-          </div>
-          <div class="text-block hide-on-small-only" style="top:10%;">
-            
-                <center>  <h1 class="center-align" style="background: black; width:fit-content"><%=description['About me']['name']%></h1>
-                    <div class="container truncate" id="describe2" style="background: black;line-spacing:0.2rem;">
-                            <%=description['About me']['describe']%> 
-                         </div>
-                         <button onclick="document.getElementById('describe2').classList.remove('truncate'); document.getElementById('plus').style.display='none';" id="plus" class="btn-floating red circle material-icons waves-effect tooltipped" data-position="right" data-tooltip="Click to view full description">add </button>
-                        
-                </center>
-                  
-                
-            </div>
-                
-    
-    </div>
-
+<div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+  </div>
+        
   <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems, {fullWidth:false});
-          });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {numVisible:5});
+        
 
-          document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.tooltipped');
-            var instances = M.Tooltip.init(elems, {});
-          });
+
+      });
   </script>
- 
